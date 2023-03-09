@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    public Dictionary<Vector2Int, Tile> GeneratedTiles = new Dictionary<Vector2Int, Tile>();
+    public readonly Dictionary<Vector2Int, Tile> GeneratedTiles = new Dictionary<Vector2Int, Tile>();
 
     public static TileManager Instance { get; private set; }
 
@@ -20,33 +20,14 @@ public class TileManager : MonoBehaviour
             Instance = this;
         }
     }
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     public struct Tile
     {
-        private Vector2Int _tileCoordinates;
-        // private Vector2 _cartesianCoordinates;
-        //
-        // public bool ColliderEnabled;
-
         public Tile(Vector2Int tileCoordinates)
         {
-            this._tileCoordinates = tileCoordinates;
-            // this._cartesianCoordinates = TileManager.Instance.GeneratedTiles
+            TileCoordinates = tileCoordinates;
         }
 
-        public Vector2Int TileCoordinates
-        {
-            get { return _tileCoordinates; }
-            set { _tileCoordinates = value; }
-        }
+        private Vector2Int TileCoordinates { get; set; }
     }
 }
