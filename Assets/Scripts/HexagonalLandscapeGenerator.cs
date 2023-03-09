@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class HexagonalLandscapeGenerator : MonoBehaviour
 {
-    [SerializeField] private float hexRadius = 1;
+    [SerializeField] private float hexRadius = 2;
 
-    [SerializeField, Range(0.0f, 0.1f)] private float noiseScale1 = 1;
-    [SerializeField, Range(0.0f, 0.1f)] private float noiseScale2 = 1;
+    [SerializeField, Range(0.0f, 0.1f)] private float noiseScale1 = 0.03f;
+    [SerializeField, Range(0.0f, 0.1f)] private float noiseScale2 = 0.05f;
 
-    [SerializeField] private float minHeight = -1f;
-    [SerializeField] private float maxHeight = 3f;
+    [SerializeField] private float minHeight = -3f;
+    [SerializeField] private float maxHeight = 7f;
 
-    [SerializeField] private float heightMultiplier = 1;
+    [SerializeField] private float heightMultiplier = 5;
 
-    [SerializeField, Range(1, 25)] private int generationRadius = 4;
+    [SerializeField, Range(1, 25)] private int generationRadius = 10;
 
     [SerializeField] private Transform playerTransform;
 

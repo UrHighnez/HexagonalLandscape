@@ -154,11 +154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hexRadius: 2
-  noiseScale1: 0.02
-  noiseScale2: 0.034
-  minHeight: -7
-  maxHeight: 15
-  heightMultiplier: 7
+  noiseScale1: 0.03
+  noiseScale2: 0.05
+  minHeight: -3
+  maxHeight: 7
+  heightMultiplier: 5
   generationRadius: 10
   playerTransform: {fileID: 768925988}
   hexagonPrefab: {fileID: 0}
