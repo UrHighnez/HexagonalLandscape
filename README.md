@@ -1,4 +1,4 @@
-#Procedural Hexagonal 3D Landscape Generator
+# Procedural Hexagonal 3D Landscape Generator
 HexagonalLandscapeGenerator is a Unity project that generates a procedurally generated hexagonal terrain. It uses Perlin noise to create a heightmap for each hexagon, resulting in a dynamic and realistic-looking landscape.
 
 The script is designed to work with hexagons of a specific size, and allows for customization of various parameters such as noise scale, minimum and maximum heights, and generation radius. It also includes a player tracking feature that generates terrain around the player's position.
